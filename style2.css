@@ -1,0 +1,457 @@
+/* clases que uso varias veces */
+.tarjeta {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 4px gray;
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+
+.tarjeta:hover {
+  background-color: rgb(242, 209, 209);
+}
+
+.flex-columna {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-fila {
+  display: flex;
+  flex-direction: row;
+}
+
+.centrado {
+  justify-content: center;
+  align-items: center;
+}
+
+/* clases base */
+#cabecera {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(244, 221, 241);
+  box-shadow: 5px 5px 10px gray;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#cabecera h1 {
+  display: flex;
+  font-style: italic;
+  font-size: 60pt;
+  color: rgb(148, 67, 80);
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  padding: 30px;
+  gap: 20px;
+  border-radius: 10px;
+  font-style: italic;
+  justify-content: center;
+  background-color: rgb(227, 171, 216);
+  border: 5px double rgb(206, 98, 116);
+  box-shadow: 5px 5px 10px gray;
+}
+
+.menu a {
+  color: rgb(107, 65, 72);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu_foto {
+  display: inline-flex;
+  flex-direction: row;
+  object-fit: fill;
+  overflow: hidden;
+  margin: 10px;
+  gap: 20px;
+  align-items: center;
+  background-color: rgb(251, 248, 251);
+  border: 5px dotted pink;
+  box-shadow: 5px 5px 4px gray;
+}
+
+.menu_foto img {
+  width: 50%;
+  max-width: 310px;
+  padding: 10px;
+}
+
+.menu_foto p {
+  font-size: 12pt;
+  width: 100%;
+  align-self: center;
+}
+
+#cancion {
+  display: block;
+  text-align: center;
+  margin: 20px;
+}
+
+.titulos {
+  text-align: center;
+  font-style: italic;
+  color: palevioletred;
+}
+
+.container {
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-content: center;
+  box-shadow: 5px 5px 4px gray;
+  align-items: flex-start;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.container p {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.container img {
+  object-fit: cover;
+  width: 30%;
+  min-width: 150px;
+  height: 200px;
+  flex: 1;
+  transition: flex .5s;
+  padding: 10px;
+}
+
+.container:hover {
+  background-color: rgb(242, 209, 209);
+  transition-duration: 1s;
+}
+
+.container img:hover {
+  flex: 4;
+}
+
+.seleccion_peliculas {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.pelicula {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+
+.pelicula img {
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.pelicula:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.pelicula:hover .overlay {
+  opacity: 1;
+}
+
+.aprendizajes {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-shadow: 5px 5px 4px gray;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+  gap: 20px;
+}
+
+.aprendizajes:hover {
+  background-color: rgb(242, 209, 209);
+  transition: 1s;
+}
+
+.aprendizajes .contenido {
+  flex: 1;
+}
+
+.aprendizajes .contenido p,
+.aprendizajes .contenido ul {
+  margin-bottom: 10px;
+}
+
+.aprendizajes .certificado_programacion {
+  flex: 0 0 300px;
+}
+
+.aprendizajes .certificado_programacion img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contenedor_proyecto {
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: flex-start;
+  border-radius: 20px;
+  box-shadow: 5px 5px 4px gray;
+  padding: 10px;
+  background-color: white;
+}
+
+.contenedor_proyecto p {
+  width: 100%;
+}
+
+.contenedor_proyecto video {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  margin-top: 20px;
+  max-width: 720px;
+  width: 100%;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.contenedor_proyecto:hover {
+  background-color: rgb(242, 209, 209);
+  transition-duration: 1s;
+}
+
+.final {
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.aficiones {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 5px 5px 4px gray;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.aficiones:hover {
+  background-color: rgb(242, 209, 209);
+  transition-duration: 1s;
+}
+
+#t3 {
+  text-align: center;
+}
+
+.experiencia_personal {
+  display: flex;
+  box-shadow: 5px 5px 4px gray;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: white;
+}
+
+.experiencia_personal:hover {
+  background-color: rgb(242, 209, 209);
+  transition-duration: 1s; /* para que haya la transicion de color con el ratón*/
+}
+
+#tabla_experiencia {
+  width: 100%;
+  border-collapse: collapse; /*para que no salga el borde duplicado*/
+  border: 2px solid rgb(148, 67, 80);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 5px 4px gray;
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+}
+
+#tabla_experiencia th {
+  background-color: rgb(148, 67, 80);
+  color: white;
+  padding: 15px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#tabla_experiencia td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  min-width: 600px;
+  font-size: 20pt;
+  padding: 10px;
+  background-color: white;
+}
+
+.formulario fieldset {
+  border-radius: 20px;
+  box-shadow: 5px 5px 4px gray;
+  background-color: beige;
+}
+
+form {
+  border-radius: 10px;
+}
+
+.fecha_nacimiento {
+  width: 100%;
+  border-radius: 10px;
+  border-style: dotted;
+  padding: 5px;
+  background-color: beige;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+.titulo-estilo {
+  font-style: italic;
+  color: palevioletred;
+}
+
+#cancion,
+#t3,
+#titulo_form {
+  text-align: center;
+}
+
+.titulos,
+#t3 {
+  font-style: italic;
+  color: palevioletred;
+}
+
+.final {
+  display: inline-flex;
+  width: 100%;
+}
+
+.aficiones,
+.experiencia_personal,
+.formulario fieldset {
+  padding: 10px;
+}
+
+.titulo-formulario {
+    text-align: center;
+    color: rgb(148, 67, 80);
+    margin-bottom: 30px;
+    font-size: 2.rem;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.formulario-contenedor {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    padding: 30px;
+    margin-bottom: 40px;
+    transition: all 0.5s ease;
+}
+
+.grupo-formulario {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.grupo-formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: rgb(148, 67, 80);
+    font-size: 1rem;
+}
+
+.input-estilizado, .textarea-estilizado, .select-estilizado {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #795757;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.5s ease;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.grupo-radio, .grupo-checkbox {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.opcion-radio, .opcion-checkbox {
+    display: flex;
+    align-items: center;
+}
+        
+.contenedor-botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.boton-formulario {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    min-width: 140px;
+    box-shadow: 0 4px 6px black;
+}
+
+.boton-reset {
+    background: red;
+    color: white;
+}
+
+.boton-submit {
+    background: green;
+    color: white;
+}
